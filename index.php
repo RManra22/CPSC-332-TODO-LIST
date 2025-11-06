@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             text-align: center;
-            padding-top: 50px;
+            padding-top: 55px;
         }
         h1 {
             color: #333;
