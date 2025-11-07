@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             text-align: center;
-            padding-top: 55px;
+            padding-top: 50px;
         }
         h1 {
             color: #333;
@@ -18,7 +18,7 @@
         ul{
             list-style-type: none;
             text-align: center;
-            padding-right: 45px;
+            padding-right: 55px;
         }
     </style>
     <body>
@@ -37,7 +37,7 @@
         <ul>
             <?php
                 $pdo = new PDO('mysql:host=localhost;dbname=TODO;charset=utf8mb4','root','');
-                $tasks = $pdo-> query('SELECT * FROM tasks');
+                $tasks = $pdo-> query('SELECT * FROM tasks  ORDER BY id DESC');
                 foreach ($tasks as $t) {
                     echo "<li>#{$t['id']}: {$t['tname']}</li>";
                 }     
